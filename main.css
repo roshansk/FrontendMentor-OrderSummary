@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+:root{
+    --color-primary:hsl(223, 47%, 23%);
+    --color-secondary:hsl(224, 23%, 55%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('./images/pattern-background-mobile.svg') hsl(225, 100%, 94%) repeat-x;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+div.card{
+    width: min(85%,320px);
+    margin: 2rem auto;
+    background-color: #fff;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+img#hero-img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+h3#heading-1{
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+p#subtext{
+    font-size: 12px;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-align: center;
+    word-wrap: break-word;
+    margin: 0 1rem 1rem 1rem;
+}
+
+div#plan{
+    display: flex;
+    justify-content:space-around;
+    place-items: center;
+    padding: 0 1.6rem;
+}
+
+
+img#plan-icon{
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
+    border : 3px solid hsl(245, 75%, 52%);
+    border-radius: 50%;
+    animation: rotate-infinite 3s linear infinite ;
+}
+
+
+p#plan-text span{
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+}
+
+p#plan-text span:nth-of-type(1){
+    color: var(--color-primary);
+}
+
+p#plan-text span:nth-of-type(2){
+    color: var(--color-secondary);
+}
+
+a#plan-action{
+    color:hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+a#plan-action:hover,a#plan-action:active{
+    color:hsl(245, 75%, 65%);
+    text-decoration: none;
+}
+
+button{
+    margin: 0 auto;
+    padding: 0.6rem;
+    width: 90%;
+}
+
+button#make-payment{
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color:hsl(245, 75%, 52%);
+    border: none;
+    color: #fff;
+    padding: 0.8rem 0;
+    outline: none;
+    box-shadow:  20px 20px 60px hsl(225, 100%, 94%),
+             -20px -20px 60px hsl(225, 100%, 94%);
+}
+
+button#make-payment:hover,button#make-payment:active{
+    background-color: hsl(245, 75%, 65%);
+}
+
+a#cancel-order{
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    margin-bottom: 1.6rem;
+    text-align: center;
+    
+}
+
+a#cancel-order:hover,a#cancel-order:active{
+    color: hsl(224, 23%, 35%);
+}
+
+/*Animations*/
+
+@keyframes rotate-infinite {
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (min-width:375px) {
+    
+    body{
+        background: url('./images/pattern-background-desktop.svg') hsl(225, 100%, 94%) repeat-x;
+        height: 100vh;
+    }
+
+    div.card{
+        margin: 3.5rem auto;
+    }
+}
