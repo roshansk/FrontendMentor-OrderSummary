@@ -19,7 +19,7 @@ body{
 
 div.card{
     width: min(85%,320px);
-    margin: 2rem auto;
+    margin: 3.5rem auto;
     background-color: #fff;
     display: flex;
     gap: 1rem;
@@ -109,6 +109,7 @@ button#make-payment{
     margin-top: 1rem;
     border-radius: 10px;
     font-size: 12px;
+    width: 80%;
     font-weight: 600;
     background-color:hsl(245, 75%, 52%);
     border: none;
@@ -155,6 +156,72 @@ a#cancel-order:hover,a#cancel-order:active{
     }
 
     div.card{
-        margin: 3.5rem auto;
+        width: min(350px,90%);
     }
+
+
+    h3#heading-1{
+        font-size: 1.4rem;
+    }
+
+    p#subtext{
+        font-size: 0.8rem;
+        padding: 0 1.9rem;
+    }
+
+    div#plan{
+        padding: 1rem 2.4rem;
+    }
+
+    img#plan-icon{
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    p#plan-text span,a#plan-action,button#make-payment,a#cancel-order{
+        font-size: 0.8rem;
+    }
+
+    button#make-payment,a#cancel-order{
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    
+
+    div.card{
+        width: min(420px,40%);
+        margin-top: 8rem;
+    }
+
+
+    h3#heading-1{
+        font-size: 1.6rem;
+    }
+
+    p#subtext{
+        font-size: 1rem;
+        padding: 0 1.9rem;
+    }
+
+    div#plan{
+        padding: 1rem 2.4rem;
+    }
+
+    img#plan-icon{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    p#plan-text span,a#plan-action,button#make-payment,a#cancel-order{
+        font-size: 1rem;
+    }
+
+    button#make-payment,a#cancel-order{
+        padding: 1rem 0;
+    }
+
 }
